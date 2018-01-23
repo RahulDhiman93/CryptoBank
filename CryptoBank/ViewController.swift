@@ -21,7 +21,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-       self.ind.startAnimating()
+       
+        self.view?.alpha = 0.6
+        self.ind.startAnimating()
+        
+        
           DispatchQueue.main.async {
            self.get_crptodata(){ (success,fail,names) in
             if success == false {
@@ -30,6 +34,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             else{
                 DispatchQueue.main.async {
                     self.ind.stopAnimating()
+                    self.view?.alpha = 1
                     self.currencyNames = names!
                     print("COUNT")
                     print(self.currencyNames.count)
@@ -65,11 +70,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return cell
 }
     
-    @IBAction func btn(_ sender: Any) {
-        
-        
-        
-    }
+   
     
   
     
@@ -94,6 +95,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         })
         //print(array)
         
+    }
+    
+    func UISetup(enable: Bool){
+        self.tableView.isEditing = enable
     }
 }
 
