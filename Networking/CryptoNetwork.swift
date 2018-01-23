@@ -16,6 +16,7 @@ struct CryptoNetwork{
     mutating func get_data(completion:@escaping (_ error:String?,_ data:[String]?)->()){
         
         var cryptoname:[String] = []
+        var cname:[String] = []
         
         let url = URL(string:"https://api.coinmarketcap.com/v1/ticker/")!
         
@@ -37,7 +38,8 @@ struct CryptoNetwork{
                     cryptoname.append(name)
                 }
             }
-            completion(nil,cryptoname)
+            cname = cryptoname
+            completion(nil,cname)
             
         }
         task.resume()

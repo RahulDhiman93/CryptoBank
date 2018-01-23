@@ -13,6 +13,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var ind: UIActivityIndicatorView!
+    
     let cryp = CryptoNetwork()
     var currencyNames:[String] = []
 
@@ -29,8 +30,12 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             else{
                 DispatchQueue.main.async {
                     self.ind.stopAnimating()
-                    print(names!)
+                    self.currencyNames = names!
+                    print("COUNT")
+                    print(self.currencyNames.count)
+                    self.tableView.reloadData()
                 }
+                
             }
           }
         }
@@ -81,7 +86,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             
             else{
                   DispatchQueue.main.async {
+                    print("DONE")
              completion(true,nil,data!)
+                    self.tableView.reloadData()
             }
             }
         })
