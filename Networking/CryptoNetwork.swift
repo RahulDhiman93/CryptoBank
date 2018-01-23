@@ -11,7 +11,11 @@ import Foundation
 
 struct CryptoNetwork{
     
-    func get_data(completion:@escaping (_ error:String?,_ data:String?)->()){
+    
+    
+    mutating func get_data(completion:@escaping (_ error:String?,_ data:[String]?)->()){
+        
+        var cryptoname:[String] = []
         
         let url = URL(string:"https://api.coinmarketcap.com/v1/ticker/")!
         
@@ -20,13 +24,20 @@ struct CryptoNetwork{
         let task = session.dataTask(with: url){ data,response,error in
             
             if error != nil{
-               // completion(error?.localizedDescription,nil)
+                completion(error?.localizedDescription,nil)
                 return
             }
             
-            let parsedata = try! JSONSerialization.jsonObject(with: data!, options: .allowFragments) as AnyObject
+            let parsedata = try! JSONSerialization.jsonObject(with: data!) as! [[String:Any]]
+            //print(parsedata)
             
-            print(parsedata)
+            
+            for names in parsedata{
+                if let name = names["name"] as? String{
+                    cryptoname.append(name)
+                }
+            }
+            completion(nil,cryptoname)
             
         }
         task.resume()

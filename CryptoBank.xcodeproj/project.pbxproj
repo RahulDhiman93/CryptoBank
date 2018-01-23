@@ -14,6 +14,7 @@
 		0860CA452016F3E700300BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0860CA442016F3E700300BED /* Assets.xcassets */; };
 		0860CA482016F3E700300BED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0860CA462016F3E700300BED /* LaunchScreen.storyboard */; };
 		0860CA512016FC7100300BED /* CryptoNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860CA502016FC7100300BED /* CryptoNetwork.swift */; };
+		0860CA532017895800300BED /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860CA522017895800300BED /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0860CA472016F3E700300BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0860CA492016F3E700300BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0860CA502016FC7100300BED /* CryptoNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoNetwork.swift; sourceTree = "<group>"; };
+		0860CA522017895800300BED /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				0860CA3A2016F3E700300BED /* AppDelegate.swift */,
 				0860CA3C2016F3E700300BED /* ViewController.swift */,
+				0860CA522017895800300BED /* TableViewCell.swift */,
 				0860CA3E2016F3E700300BED /* Main.storyboard */,
 				0860CA442016F3E700300BED /* Assets.xcassets */,
 				0860CA462016F3E700300BED /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0860CA532017895800300BED /* TableViewCell.swift in Sources */,
 				0860CA3D2016F3E700300BED /* ViewController.swift in Sources */,
 				0860CA512016FC7100300BED /* CryptoNetwork.swift in Sources */,
 				0860CA3B2016F3E700300BED /* AppDelegate.swift in Sources */,
