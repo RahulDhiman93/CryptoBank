@@ -21,6 +21,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var symbol: UILabel!
     
     @IBOutlet weak var change24H: UILabel!
+    @IBOutlet weak var rankingorder: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
