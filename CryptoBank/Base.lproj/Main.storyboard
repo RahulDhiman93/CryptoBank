@@ -34,15 +34,33 @@
                                 <rect key="frame" x="0.0" y="195" width="375" height="472"/>
                                 <color key="backgroundColor" red="0.01965268782" green="0.01965268782" blue="0.01965268782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="93" id="UVJ-4U-EXh" customClass="TableViewCell" customModule="CryptoBank" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="93"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="165" id="UVJ-4U-EXh" customClass="TableViewCell" customModule="CryptoBank" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="165"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UVJ-4U-EXh" id="9yz-cy-tOt">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="164.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxf-WX-6gV">
-                                                    <rect key="frame" x="15" y="23" width="148" height="46"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxf-WX-6gV">
+                                                    <rect key="frame" x="15" y="23" width="153" height="39"/>
+                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2C8-Ub-dec">
+                                                    <rect key="frame" x="23" y="63" width="51" height="26.5"/>
+                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8a-2g-YYL">
+                                                    <rect key="frame" x="82" y="74" width="9.5" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42b-z1-UFy">
+                                                    <rect key="frame" x="95" y="69" width="90" height="27"/>
                                                     <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -50,15 +68,28 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.01965268782" green="0.01965268782" blue="0.01965268782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstItem="Bxf-WX-6gV" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" constant="12" id="Kgd-DM-uRy"/>
-                                                <constraint firstItem="Bxf-WX-6gV" firstAttribute="leading" secondItem="9yz-cy-tOt" secondAttribute="leadingMargin" id="dDY-n0-j2V"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Bxf-WX-6gV" secondAttribute="bottom" constant="13" id="dgm-dA-Vpa"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Bxf-WX-6gV" secondAttribute="trailing" constant="197" id="lEQ-KE-hj6"/>
+                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" constant="63" id="1PO-xf-HYl"/>
+                                                <constraint firstItem="Bxf-WX-6gV" firstAttribute="leading" secondItem="9yz-cy-tOt" secondAttribute="leadingMargin" id="1RP-c5-QyZ"/>
+                                                <constraint firstItem="2C8-Ub-dec" firstAttribute="leading" secondItem="9yz-cy-tOt" secondAttribute="leadingMargin" constant="8" id="2tl-Ue-1sf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="42b-z1-UFy" secondAttribute="trailing" constant="175" id="AvT-Pg-QXn"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="P8a-2g-YYL" secondAttribute="bottom" constant="59" id="KTJ-eX-6LL"/>
+                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="8" id="M1Z-Fv-vrr"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Bxf-WX-6gV" secondAttribute="trailing" constant="192" id="MhT-NJ-KRl"/>
+                                                <constraint firstItem="Bxf-WX-6gV" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" constant="12" id="V1L-TK-roc"/>
+                                                <constraint firstItem="42b-z1-UFy" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" constant="58" id="Y0q-Sa-YgG"/>
+                                                <constraint firstItem="2C8-Ub-dec" firstAttribute="top" secondItem="Bxf-WX-6gV" secondAttribute="bottom" constant="1" id="bIl-jq-kKW"/>
+                                                <constraint firstItem="42b-z1-UFy" firstAttribute="leading" secondItem="P8a-2g-YYL" secondAttribute="trailing" constant="3.5" id="ebg-0o-aw8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="42b-z1-UFy" secondAttribute="bottom" constant="58" id="gNl-im-LVD"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="2C8-Ub-dec" secondAttribute="bottom" constant="64.5" id="iFp-mE-UB2"/>
+                                                <constraint firstItem="2C8-Ub-dec" firstAttribute="top" secondItem="Bxf-WX-6gV" secondAttribute="bottom" constant="1" id="l86-h9-LMh"/>
+                                                <constraint firstItem="42b-z1-UFy" firstAttribute="leading" secondItem="P8a-2g-YYL" secondAttribute="trailing" constant="3.5" id="o3B-Ck-AOd"/>
+                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="8" id="oBq-ue-7eb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.01965268782" green="0.01965268782" blue="0.01965268782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="CurrencyTitle" destination="Bxf-WX-6gV" id="c61-sU-HZn"/>
+                                            <outlet property="priceUSD" destination="42b-z1-UFy" id="tAN-Ly-dvJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

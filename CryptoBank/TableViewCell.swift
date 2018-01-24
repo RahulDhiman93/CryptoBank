@@ -14,6 +14,8 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var CurrencyTitle: UILabel!
     
+    @IBOutlet weak var priceUSD: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -14,8 +14,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     @IBOutlet weak var ind: UIActivityIndicatorView!
     
+    
+    
     let cryp = CryptoNetwork()
     var currencyNames:[String] = []
+    var priceusd:[String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +30,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         
           DispatchQueue.main.async {
-           self.get_crptodata(){ (success,fail,names) in
+           self.get_crptodata(){ (success,fail,names,price) in
             if success == false {
                 return
             }
@@ -36,6 +39,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                     self.ind.stopAnimating()
                     self.view?.alpha = 1
                     self.currencyNames = names!
+                    self.priceusd = price!
+                    print(self.priceusd.count)
                     print("COUNT")
                     print(self.currencyNames.count)
                     self.tableView.reloadData()
@@ -64,9 +69,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         print("IN CELLLLLLLL")
         let arName = currencyNames[indexPath.row]
+        let prPrice = priceusd[indexPath.row]
         print("in arname")
         print(arName)
        cell.CurrencyTitle.text = arName
+        cell.priceUSD.text = String(prPrice)
         return cell
 }
     
@@ -74,21 +81,21 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
   
     
-    func get_crptodata(_ completion: @escaping (_ done: Bool, _ error: String?,_ gotit: [String]?) -> Void){
+    func get_crptodata(_ completion: @escaping (_ done: Bool, _ error: String?,_ gotit: [String]?,_ price:[String]?) -> Void){
         var cryp = CryptoNetwork()
        
         
-        cryp.get_data(completion: {error,data in
+        cryp.get_data(completion: {error,data,price in
             
             if error != nil{
-                completion(false,error,nil)
+                completion(false,error,nil,nil)
                 return
             }
             
             else{
                   DispatchQueue.main.async {
                     print("DONE")
-             completion(true,nil,data!)
+             completion(true,nil,data!,price!)
                     self.tableView.reloadData()
             }
             }

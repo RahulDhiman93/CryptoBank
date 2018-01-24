@@ -13,10 +13,11 @@ struct CryptoNetwork{
     
     
     
-    mutating func get_data(completion:@escaping (_ error:String?,_ data:[String]?)->()){
+    mutating func get_data(completion:@escaping (_ error:String?,_ data:[String]?,_ data:[String]?)->()){
         
         var cryptoname:[String] = []
         var cname:[String] = []
+        var priceUSD:[String] = []
         
         let url = URL(string:"https://api.coinmarketcap.com/v1/ticker/")!
         
@@ -25,7 +26,7 @@ struct CryptoNetwork{
         let task = session.dataTask(with: url){ data,response,error in
             
             if error != nil{
-                completion(error?.localizedDescription,nil)
+                completion(error?.localizedDescription,nil,nil)
                 return
             }
             
@@ -38,8 +39,16 @@ struct CryptoNetwork{
                     cryptoname.append(name)
                 }
             }
+            
+            for price in parsedata{
+                if let usd = price["price_usd"] as? String{
+                    priceUSD.append(usd)
+                }
+            }
+            print("price ticker")
+            print(priceUSD)
             cname = cryptoname
-            completion(nil,cname)
+            completion(nil,cname,priceUSD)
             
         }
         task.resume()
