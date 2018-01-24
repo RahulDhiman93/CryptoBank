@@ -13,11 +13,13 @@ struct CryptoNetwork{
     
     
     
-    mutating func get_data(completion:@escaping (_ error:String?,_ data:[String]?,_ data:[String]?)->()){
+    mutating func get_data(completion:@escaping (_ error:String?,_ data:[String]?,_ price:[String]?,_ symbol:[String]?,_ change24h:[String]?)->()){
         
         var cryptoname:[String] = []
         var cname:[String] = []
         var priceUSD:[String] = []
+        var symb:[String] = []
+        var change1day:[String] = []
         
         let url = URL(string:"https://api.coinmarketcap.com/v1/ticker/")!
         
@@ -26,7 +28,7 @@ struct CryptoNetwork{
         let task = session.dataTask(with: url){ data,response,error in
             
             if error != nil{
-                completion(error?.localizedDescription,nil,nil)
+                completion(error?.localizedDescription,nil,nil,nil,nil)
                 return
             }
             
@@ -45,10 +47,23 @@ struct CryptoNetwork{
                     priceUSD.append(usd)
                 }
             }
+            
+            for symbi in parsedata{
+                if let symbol = symbi["symbol"] as? String{
+                    symb.append(symbol)
+                }
+            }
+            
+            for chng in parsedata{
+                if let change = chng["percent_change_24h"] as? String{
+                    change1day.append(change)
+                }
+            }
             print("price ticker")
-            print(priceUSD)
+            print(change1day)
+            print(Float(change1day[1])!)
             cname = cryptoname
-            completion(nil,cname,priceUSD)
+            completion(nil,cname,priceUSD,symb,change1day)
             
         }
         task.resume()

@@ -48,13 +48,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2C8-Ub-dec">
-                                                    <rect key="frame" x="23" y="63" width="51" height="26.5"/>
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8a-2g-YYL">
-                                                    <rect key="frame" x="82" y="74" width="9.5" height="21"/>
+                                                    <rect key="frame" x="23" y="63" width="51" height="27"/>
                                                     <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -65,31 +59,91 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8a-2g-YYL">
+                                                    <rect key="frame" x="82" y="74" width="10" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="symb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3L-xg-ukA">
+                                                    <rect key="frame" x="265" y="11" width="47" height="97"/>
+                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change- 24H" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixY-p9-G3f">
+                                                    <rect key="frame" x="15" y="103" width="104" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sto" translatesAutoresizingMaskIntoConstraints="NO" id="mbN-li-Tfb">
+                                                    <rect key="frame" x="8" y="136" width="17" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="17" id="XAs-H5-tOx"/>
+                                                        <constraint firstAttribute="height" constant="17" id="Z9d-lZ-l0d"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sto copy" translatesAutoresizingMaskIntoConstraints="NO" id="cuo-WU-gx1">
+                                                    <rect key="frame" x="29" y="136" width="17" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="17" id="QR7-pL-7nF"/>
+                                                        <constraint firstAttribute="height" constant="17" id="btE-Uc-JG3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTR-Li-xDO">
+                                                    <rect key="frame" x="59" y="133" width="115" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.01965268782" green="0.01965268782" blue="0.01965268782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="P8a-2g-YYL" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" constant="63" id="1PO-xf-HYl"/>
                                                 <constraint firstItem="Bxf-WX-6gV" firstAttribute="leading" secondItem="9yz-cy-tOt" secondAttribute="leadingMargin" id="1RP-c5-QyZ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="t3L-xg-ukA" secondAttribute="bottom" constant="46" id="2t6-9b-SMm"/>
                                                 <constraint firstItem="2C8-Ub-dec" firstAttribute="leading" secondItem="9yz-cy-tOt" secondAttribute="leadingMargin" constant="8" id="2tl-Ue-1sf"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ixY-p9-G3f" secondAttribute="bottom" constant="30" id="4BA-pB-vLe"/>
+                                                <constraint firstItem="mbN-li-Tfb" firstAttribute="top" secondItem="ixY-p9-G3f" secondAttribute="bottom" constant="12" id="5Ux-Gs-6zi"/>
+                                                <constraint firstItem="cuo-WU-gx1" firstAttribute="leading" secondItem="mbN-li-Tfb" secondAttribute="trailing" constant="4" id="9jN-oH-UGe"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="42b-z1-UFy" secondAttribute="trailing" constant="175" id="AvT-Pg-QXn"/>
+                                                <constraint firstItem="cuo-WU-gx1" firstAttribute="bottom" secondItem="9yz-cy-tOt" secondAttribute="bottomMargin" constant="-1" id="DfQ-bw-csG"/>
+                                                <constraint firstItem="zTR-Li-xDO" firstAttribute="bottom" secondItem="9yz-cy-tOt" secondAttribute="bottomMargin" id="GVj-h6-8vP"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="P8a-2g-YYL" secondAttribute="bottom" constant="59" id="KTJ-eX-6LL"/>
                                                 <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="8" id="M1Z-Fv-vrr"/>
+                                                <constraint firstItem="zTR-Li-xDO" firstAttribute="leading" secondItem="cuo-WU-gx1" secondAttribute="trailing" constant="13" id="MIj-i4-DWG"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Bxf-WX-6gV" secondAttribute="trailing" constant="192" id="MhT-NJ-KRl"/>
+                                                <constraint firstItem="t3L-xg-ukA" firstAttribute="leading" secondItem="ixY-p9-G3f" secondAttribute="trailing" constant="146" id="Qw2-F7-LWB"/>
+                                                <constraint firstItem="ixY-p9-G3f" firstAttribute="top" secondItem="42b-z1-UFy" secondAttribute="bottom" constant="7" id="U71-6C-xzh"/>
                                                 <constraint firstItem="Bxf-WX-6gV" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" constant="12" id="V1L-TK-roc"/>
                                                 <constraint firstItem="42b-z1-UFy" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" constant="58" id="Y0q-Sa-YgG"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cuo-WU-gx1" secondAttribute="trailing" constant="314" id="aPI-6A-2dX"/>
                                                 <constraint firstItem="2C8-Ub-dec" firstAttribute="top" secondItem="Bxf-WX-6gV" secondAttribute="bottom" constant="1" id="bIl-jq-kKW"/>
+                                                <constraint firstItem="t3L-xg-ukA" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" id="dPs-EO-ImI"/>
                                                 <constraint firstItem="42b-z1-UFy" firstAttribute="leading" secondItem="P8a-2g-YYL" secondAttribute="trailing" constant="3.5" id="ebg-0o-aw8"/>
+                                                <constraint firstItem="zTR-Li-xDO" firstAttribute="leading" secondItem="cuo-WU-gx1" secondAttribute="trailing" constant="13" id="ecx-63-vmv"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="zTR-Li-xDO" secondAttribute="trailing" constant="186" id="f4k-eW-H3f"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="42b-z1-UFy" secondAttribute="bottom" constant="58" id="gNl-im-LVD"/>
+                                                <constraint firstItem="cuo-WU-gx1" firstAttribute="leading" secondItem="mbN-li-Tfb" secondAttribute="trailing" constant="4" id="i18-di-ih8"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="2C8-Ub-dec" secondAttribute="bottom" constant="64.5" id="iFp-mE-UB2"/>
+                                                <constraint firstItem="mbN-li-Tfb" firstAttribute="bottom" secondItem="9yz-cy-tOt" secondAttribute="bottomMargin" constant="-1" id="jvD-uI-MNR"/>
+                                                <constraint firstItem="ixY-p9-G3f" firstAttribute="leading" secondItem="9yz-cy-tOt" secondAttribute="leadingMargin" id="kwk-Ub-qB9"/>
                                                 <constraint firstItem="2C8-Ub-dec" firstAttribute="top" secondItem="Bxf-WX-6gV" secondAttribute="bottom" constant="1" id="l86-h9-LMh"/>
                                                 <constraint firstItem="42b-z1-UFy" firstAttribute="leading" secondItem="P8a-2g-YYL" secondAttribute="trailing" constant="3.5" id="o3B-Ck-AOd"/>
                                                 <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="8" id="oBq-ue-7eb"/>
+                                                <constraint firstItem="cuo-WU-gx1" firstAttribute="top" secondItem="ixY-p9-G3f" secondAttribute="bottom" constant="12" id="pzg-gL-Eth"/>
+                                                <constraint firstItem="zTR-Li-xDO" firstAttribute="top" secondItem="ixY-p9-G3f" secondAttribute="bottom" constant="9" id="xQn-9l-e75"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.01965268782" green="0.01965268782" blue="0.01965268782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="CurrencyTitle" destination="Bxf-WX-6gV" id="c61-sU-HZn"/>
+                                            <outlet property="change24H" destination="zTR-Li-xDO" id="J8d-Tl-xxc"/>
+                                            <outlet property="down" destination="cuo-WU-gx1" id="y8c-aN-ehJ"/>
                                             <outlet property="priceUSD" destination="42b-z1-UFy" id="tAN-Ly-dvJ"/>
+                                            <outlet property="symbol" destination="t3L-xg-ukA" id="5LL-Aj-c7N"/>
+                                            <outlet property="up" destination="mbN-li-Tfb" id="PZj-ro-eSe"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -97,6 +151,9 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="W5V-V3-fyk">
                                 <rect key="frame" x="177" y="167" width="20" height="20"/>
                                 <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="displayGamut=sRGB-heightClass=regular-widthClass=compact">
+                                    <nil key="backgroundColor"/>
+                                </variation>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.01965268782" green="0.01965268782" blue="0.01965268782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -126,4 +183,8 @@
             <point key="canvasLocation" x="32.799999999999997" y="63.418290854572717"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sto" width="10" height="10"/>
+        <image name="sto copy" width="15" height="16"/>
+    </resources>
 </document>

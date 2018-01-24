@@ -19,6 +19,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     let cryp = CryptoNetwork()
     var currencyNames:[String] = []
     var priceusd:[String] = []
+    var symb:[String] = []
+    var change24hours:[String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +32,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         
           DispatchQueue.main.async {
-           self.get_crptodata(){ (success,fail,names,price) in
+           self.get_crptodata(){ (success,fail,names,price,symbol,change) in
             if success == false {
                 return
             }
@@ -40,6 +42,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                     self.view?.alpha = 1
                     self.currencyNames = names!
                     self.priceusd = price!
+                    self.symb = symbol!
+                    self.change24hours = change!
                     print(self.priceusd.count)
                     print("COUNT")
                     print(self.currencyNames.count)
@@ -48,6 +52,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 
             }
           }
+            self.tableView.reloadData()
         }
         
         print(currencyNames)
@@ -70,10 +75,16 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         print("IN CELLLLLLLL")
         let arName = currencyNames[indexPath.row]
         let prPrice = priceusd[indexPath.row]
+        let symbol = symb[indexPath.row]
+        let chaneg24h = change24hours[indexPath.row]
         print("in arname")
         print(arName)
        cell.CurrencyTitle.text = arName
         cell.priceUSD.text = String(prPrice)
+        cell.symbol.text = symbol
+        
+        
+        cell.change24H.text = chaneg24h
         return cell
 }
     
@@ -81,22 +92,22 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
   
     
-    func get_crptodata(_ completion: @escaping (_ done: Bool, _ error: String?,_ gotit: [String]?,_ price:[String]?) -> Void){
+    func get_crptodata(_ completion: @escaping (_ done: Bool, _ error: String?,_ gotit: [String]?,_ price:[String]?,_ symbol:[String]?,_ change:[String]?) -> Void){
         var cryp = CryptoNetwork()
        
         
-        cryp.get_data(completion: {error,data,price in
+        cryp.get_data(completion: {error,data,price,symbol,change in
             
             if error != nil{
-                completion(false,error,nil,nil)
+                completion(false,error,nil,nil,nil,nil)
                 return
             }
             
             else{
                   DispatchQueue.main.async {
                     print("DONE")
-             completion(true,nil,data!,price!)
-                    self.tableView.reloadData()
+             completion(true,nil,data!,price!,symbol!,change!)
+                    //self.tableView.reloadData()
             }
             }
         })
