@@ -120,6 +120,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailController = self.storyboard!.instantiateViewController(withIdentifier: "currency") as! CurrencyViewController
+        //detailController.meme = memes[(indexPath as NSIndexPath).row]
+        self.navigationController!.pushViewController(detailController, animated: true)
+    //present(detailController, animated: true, completion: nil)
+    }
+    
     func UISetup(enable: Bool){
         self.tableView.isEditing = enable
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		084D04F520204B8E00214D51 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D04F420204B8E00214D51 /* CurrencyViewController.swift */; };
 		0860CA3B2016F3E700300BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860CA3A2016F3E700300BED /* AppDelegate.swift */; };
 		0860CA3D2016F3E700300BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860CA3C2016F3E700300BED /* ViewController.swift */; };
 		0860CA402016F3E700300BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0860CA3E2016F3E700300BED /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		084D04F420204B8E00214D51 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		0860CA372016F3E700300BED /* CryptoBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0860CA3A2016F3E700300BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0860CA3C2016F3E700300BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				0860CA3A2016F3E700300BED /* AppDelegate.swift */,
 				0860CA3C2016F3E700300BED /* ViewController.swift */,
 				0860CA522017895800300BED /* TableViewCell.swift */,
+				084D04F420204B8E00214D51 /* CurrencyViewController.swift */,
 				0860CA3E2016F3E700300BED /* Main.storyboard */,
 				0860CA442016F3E700300BED /* Assets.xcassets */,
 				0860CA462016F3E700300BED /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0860CA532017895800300BED /* TableViewCell.swift in Sources */,
+				084D04F520204B8E00214D51 /* CurrencyViewController.swift in Sources */,
 				0860CA3D2016F3E700300BED /* ViewController.swift in Sources */,
 				0860CA512016FC7100300BED /* CryptoNetwork.swift in Sources */,
 				0860CA3B2016F3E700300BED /* AppDelegate.swift in Sources */,
