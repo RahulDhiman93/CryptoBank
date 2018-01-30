@@ -97,9 +97,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 }
     
    
-    
-  
-    
     func get_crptodata(_ completion: @escaping (_ done: Bool, _ error: String?,_ gotit: [String]?,_ price:[String]?,_ symbol:[String]?,_ change:[String]?,_ rank:[String]?) -> Void){
         var cryp = CryptoNetwork()
        

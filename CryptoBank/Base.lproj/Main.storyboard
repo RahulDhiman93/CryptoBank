@@ -14,6 +14,9 @@
         <array key="Papyrus.ttc">
             <string>Papyrus</string>
         </array>
+        <array key="Thonburi.ttc">
+            <string>Thonburi</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -41,39 +44,39 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="164.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxf-WX-6gV">
-                                                    <rect key="frame" x="51" y="21" width="153" height="39.5"/>
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxf-WX-6gV">
+                                                    <rect key="frame" x="25" y="21" width="179" height="42"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2C8-Ub-dec">
-                                                    <rect key="frame" x="23" y="63.5" width="51" height="26.5"/>
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Price:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2C8-Ub-dec">
+                                                    <rect key="frame" x="23" y="68" width="54" height="23"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42b-z1-UFy">
-                                                    <rect key="frame" x="95" y="69" width="90" height="27"/>
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                    <rect key="frame" x="90.5" y="69" width="94.5" height="27"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8a-2g-YYL">
-                                                    <rect key="frame" x="82" y="74" width="10" height="21"/>
+                                                    <rect key="frame" x="77.5" y="74" width="10" height="21"/>
                                                     <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="symb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3L-xg-ukA">
-                                                    <rect key="frame" x="265" y="11" width="47" height="97"/>
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                                    <rect key="frame" x="268" y="11" width="52" height="97"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change- 24H" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixY-p9-G3f">
-                                                    <rect key="frame" x="15" y="103" width="104" height="21"/>
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                    <rect key="frame" x="15" y="103" width="107" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -93,7 +96,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTR-Li-xDO">
                                                     <rect key="frame" x="59" y="133" width="115" height="21"/>
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -101,7 +104,7 @@
                                             <color key="backgroundColor" red="0.01965268782" green="0.01965268782" blue="0.01965268782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="P8a-2g-YYL" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" constant="63" id="1PO-xf-HYl"/>
-                                                <constraint firstItem="Bxf-WX-6gV" firstAttribute="leading" secondItem="9yz-cy-tOt" secondAttribute="leadingMargin" constant="36" id="1RP-c5-QyZ"/>
+                                                <constraint firstItem="Bxf-WX-6gV" firstAttribute="leading" secondItem="9yz-cy-tOt" secondAttribute="leadingMargin" constant="10" id="1RP-c5-QyZ"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="t3L-xg-ukA" secondAttribute="bottom" constant="46" id="2t6-9b-SMm"/>
                                                 <constraint firstItem="2C8-Ub-dec" firstAttribute="leading" secondItem="9yz-cy-tOt" secondAttribute="leadingMargin" constant="8" id="2tl-Ue-1sf"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="ixY-p9-G3f" secondAttribute="bottom" constant="30" id="4BA-pB-vLe"/>
@@ -111,7 +114,7 @@
                                                 <constraint firstItem="cuo-WU-gx1" firstAttribute="bottom" secondItem="9yz-cy-tOt" secondAttribute="bottomMargin" constant="-1" id="DfQ-bw-csG"/>
                                                 <constraint firstItem="zTR-Li-xDO" firstAttribute="bottom" secondItem="9yz-cy-tOt" secondAttribute="bottomMargin" id="GVj-h6-8vP"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="P8a-2g-YYL" secondAttribute="bottom" constant="59" id="KTJ-eX-6LL"/>
-                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="8" id="M1Z-Fv-vrr"/>
+                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="3" id="M1Z-Fv-vrr"/>
                                                 <constraint firstItem="zTR-Li-xDO" firstAttribute="leading" secondItem="cuo-WU-gx1" secondAttribute="trailing" constant="13" id="MIj-i4-DWG"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Bxf-WX-6gV" secondAttribute="trailing" constant="156" id="MhT-NJ-KRl"/>
                                                 <constraint firstItem="t3L-xg-ukA" firstAttribute="leading" secondItem="ixY-p9-G3f" secondAttribute="trailing" constant="146" id="Qw2-F7-LWB"/>
@@ -119,19 +122,19 @@
                                                 <constraint firstItem="Bxf-WX-6gV" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" constant="10" id="V1L-TK-roc"/>
                                                 <constraint firstItem="42b-z1-UFy" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" constant="58" id="Y0q-Sa-YgG"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="cuo-WU-gx1" secondAttribute="trailing" constant="314" id="aPI-6A-2dX"/>
-                                                <constraint firstItem="2C8-Ub-dec" firstAttribute="top" secondItem="Bxf-WX-6gV" secondAttribute="bottom" constant="3" id="bIl-jq-kKW"/>
+                                                <constraint firstItem="2C8-Ub-dec" firstAttribute="top" secondItem="Bxf-WX-6gV" secondAttribute="bottom" constant="5" id="bIl-jq-kKW"/>
                                                 <constraint firstItem="t3L-xg-ukA" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" id="dPs-EO-ImI"/>
                                                 <constraint firstItem="42b-z1-UFy" firstAttribute="leading" secondItem="P8a-2g-YYL" secondAttribute="trailing" constant="3.5" id="ebg-0o-aw8"/>
                                                 <constraint firstItem="zTR-Li-xDO" firstAttribute="leading" secondItem="cuo-WU-gx1" secondAttribute="trailing" constant="13" id="ecx-63-vmv"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="zTR-Li-xDO" secondAttribute="trailing" constant="186" id="f4k-eW-H3f"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="42b-z1-UFy" secondAttribute="bottom" constant="58" id="gNl-im-LVD"/>
                                                 <constraint firstItem="cuo-WU-gx1" firstAttribute="leading" secondItem="mbN-li-Tfb" secondAttribute="trailing" constant="4" id="i18-di-ih8"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="2C8-Ub-dec" secondAttribute="bottom" constant="64.5" id="iFp-mE-UB2"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="2C8-Ub-dec" secondAttribute="bottom" constant="63" id="iFp-mE-UB2"/>
                                                 <constraint firstItem="mbN-li-Tfb" firstAttribute="bottom" secondItem="9yz-cy-tOt" secondAttribute="bottomMargin" constant="-1" id="jvD-uI-MNR"/>
                                                 <constraint firstItem="ixY-p9-G3f" firstAttribute="leading" secondItem="9yz-cy-tOt" secondAttribute="leadingMargin" id="kwk-Ub-qB9"/>
-                                                <constraint firstItem="2C8-Ub-dec" firstAttribute="top" secondItem="Bxf-WX-6gV" secondAttribute="bottom" constant="3" id="l86-h9-LMh"/>
+                                                <constraint firstItem="2C8-Ub-dec" firstAttribute="top" secondItem="Bxf-WX-6gV" secondAttribute="bottom" constant="5" id="l86-h9-LMh"/>
                                                 <constraint firstItem="42b-z1-UFy" firstAttribute="leading" secondItem="P8a-2g-YYL" secondAttribute="trailing" constant="3.5" id="o3B-Ck-AOd"/>
-                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="8" id="oBq-ue-7eb"/>
+                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="3" id="oBq-ue-7eb"/>
                                                 <constraint firstItem="cuo-WU-gx1" firstAttribute="top" secondItem="ixY-p9-G3f" secondAttribute="bottom" constant="12" id="pzg-gL-Eth"/>
                                                 <constraint firstItem="zTR-Li-xDO" firstAttribute="top" secondItem="ixY-p9-G3f" secondAttribute="bottom" constant="9" id="xQn-9l-e75"/>
                                             </constraints>
