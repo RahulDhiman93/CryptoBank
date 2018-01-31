@@ -24,13 +24,15 @@ open class BarsChartConfig: ChartConfig {
 
 open class BarsChart: Chart {
     
-    public init(frame: CGRect, chartConfig: BarsChartConfig, xTitle: String, yTitle: String, bars barModels: [(String, Double)], color: UIColor, barWidth: CGFloat, animDuration: Float = 0.5, animDelay: Float = 0.5, horizontal: Bool = false) {
+    public init(frame: CGRect, chartConfig: BarsChartConfig, xTitle: String, yTitle: String, bars barModels: [(String, Double)], color: UIColor, barWidth: CGFloat, animDuration: Float = 0.8, animDelay: Float = 0.5, horizontal: Bool = false) {
         
         let zero = ChartAxisValueDouble(0)
         
+       
         let bars: [ChartBarModel] = barModels.enumerated().map {let (index, barModel) = $0;
             return ChartBarModel(constant: ChartAxisValueDouble(index), axisValue1: zero, axisValue2: ChartAxisValueDouble(barModel.1), bgColor: color)
         }
+        
         
         
         let valAxisValues = stride(from: chartConfig.valsAxisConfig.from, through: chartConfig.valsAxisConfig.to, by: chartConfig.valsAxisConfig.by).map{ChartAxisValueDouble($0, labelSettings : chartConfig.xAxisLabelSettings)}

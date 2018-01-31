@@ -28,7 +28,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.scheduledTimerWithTimeInterval()
+        self.scheduledTimerWithTimeInterval()
         tableView.delegate = self
         tableView.dataSource = self
        
@@ -98,6 +98,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         cell.symbol.text = symbol
         
        
+       
         print(rank)
         cell.change24H.text = chaneg24h
         
@@ -150,7 +151,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func scheduledTimerWithTimeInterval(){
         // Scheduling timer to Call the function "updateCounting" with the interval of 1 seconds
-        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.updateCounting), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(self.updateCounting), userInfo: nil, repeats: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -164,6 +165,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @objc func updateCounting(){
         print("im updating again")
         self.networkingAPI()
+        self.tableView.reloadData()
     }
 }
 

@@ -62,10 +62,10 @@ class CurrencyViewController: UIViewController {
         
         
        let chartConfig1 = BarsChartConfig(
-        valsAxisConfig: ChartAxisConfig(from:0.0 ,to: 30.0,by: 1.0)
+        valsAxisConfig: ChartAxisConfig(from:0.0 ,to: 40.0,by: 2.0)
         )
         
-        let frame1 = CGRect (x:0 ,y:0, width: self.graph.frame.width, height: (self.graph.frame.height+10))
+        let frame1 = CGRect (x:0 ,y:30, width: self.graph.frame.width, height: (self.graph.frame.height))
         
         
        

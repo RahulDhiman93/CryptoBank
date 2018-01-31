@@ -212,16 +212,96 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zfm-Xs-SN4">
-                                <rect key="frame" x="16" y="113" width="343" height="389"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="344"/>
                                 <color key="backgroundColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change in 1 hour:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWk-ra-92o">
+                                <rect key="frame" x="16" y="460" width="151" height="25"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change in 24 hours:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNU-yv-SRR">
+                                <rect key="frame" x="16" y="485" width="173" height="24"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change in 1 week:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Eu-Kz-hIa">
+                                <rect key="frame" x="16" y="509" width="173" height="24"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbF-wn-tDn">
+                                <rect key="frame" x="16" y="440" width="173" height="21"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFu-a4-NKo">
+                                <rect key="frame" x="16" y="419" width="173" height="21"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price in BTC:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAn-zy-YST">
+                                <rect key="frame" x="16" y="557" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Supply:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sq9-aO-CzR">
+                                <rect key="frame" x="16" y="586" width="173" height="23"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Supply:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q87-8U-WQI">
+                                <rect key="frame" x="16" y="612" width="173" height="23"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="3p4-dc-hMl" firstAttribute="trailing" secondItem="Zfm-Xs-SN4" secondAttribute="trailing" constant="16" id="0Dj-cv-hFf"/>
-                            <constraint firstItem="3p4-dc-hMl" firstAttribute="bottom" secondItem="Zfm-Xs-SN4" secondAttribute="bottom" constant="165" id="4Ec-kR-57e"/>
-                            <constraint firstItem="Zfm-Xs-SN4" firstAttribute="leading" secondItem="3p4-dc-hMl" secondAttribute="leading" constant="16" id="htT-Md-Xdf"/>
-                            <constraint firstItem="Zfm-Xs-SN4" firstAttribute="top" secondItem="3p4-dc-hMl" secondAttribute="top" constant="49" id="rvA-vm-x0c"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="trailing" secondItem="Zfm-Xs-SN4" secondAttribute="trailing" id="0Dj-cv-hFf"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="trailing" secondItem="q87-8U-WQI" secondAttribute="trailing" constant="186" id="1iY-LM-fjQ"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="bottom" secondItem="Zfm-Xs-SN4" secondAttribute="bottom" constant="259" id="4Ec-kR-57e"/>
+                            <constraint firstItem="LNU-yv-SRR" firstAttribute="top" secondItem="xbF-wn-tDn" secondAttribute="bottom" constant="24" id="5DR-ln-HhZ"/>
+                            <constraint firstItem="UFu-a4-NKo" firstAttribute="leading" secondItem="3p4-dc-hMl" secondAttribute="leading" constant="16" id="7zG-gv-Ypt"/>
+                            <constraint firstItem="xbF-wn-tDn" firstAttribute="leading" secondItem="3p4-dc-hMl" secondAttribute="leading" constant="16" id="B9h-5f-GGY"/>
+                            <constraint firstItem="xbF-wn-tDn" firstAttribute="top" secondItem="UFu-a4-NKo" secondAttribute="bottom" id="DLO-lu-ZHr"/>
+                            <constraint firstItem="dWk-ra-92o" firstAttribute="leading" secondItem="3p4-dc-hMl" secondAttribute="leading" constant="16" id="Lgv-NA-4Up"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="bottom" secondItem="dWk-ra-92o" secondAttribute="bottom" constant="182" id="NKZ-Z7-2dY"/>
+                            <constraint firstItem="5Eu-Kz-hIa" firstAttribute="top" secondItem="LNU-yv-SRR" secondAttribute="bottom" id="P23-Pv-dKg"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="trailing" secondItem="5Eu-Kz-hIa" secondAttribute="trailing" constant="186" id="Pxj-0x-HN1"/>
+                            <constraint firstItem="iAn-zy-YST" firstAttribute="leading" secondItem="3p4-dc-hMl" secondAttribute="leading" constant="16" id="Qyo-gs-cw7"/>
+                            <constraint firstItem="xbF-wn-tDn" firstAttribute="top" secondItem="Zfm-Xs-SN4" secondAttribute="bottom" constant="32" id="SxE-B5-8Di"/>
+                            <constraint firstItem="UFu-a4-NKo" firstAttribute="top" secondItem="Zfm-Xs-SN4" secondAttribute="bottom" constant="11" id="TF3-0b-IKU"/>
+                            <constraint firstItem="sq9-aO-CzR" firstAttribute="top" secondItem="iAn-zy-YST" secondAttribute="bottom" constant="8" id="W1U-2e-yu5"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="bottom" secondItem="q87-8U-WQI" secondAttribute="bottom" constant="32" id="WR6-IR-yQg"/>
+                            <constraint firstItem="iAn-zy-YST" firstAttribute="top" secondItem="5Eu-Kz-hIa" secondAttribute="bottom" constant="24" id="Ws3-dX-Rt3"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="trailing" secondItem="UFu-a4-NKo" secondAttribute="trailing" constant="186" id="YVo-ZG-2Ka"/>
+                            <constraint firstItem="LNU-yv-SRR" firstAttribute="leading" secondItem="3p4-dc-hMl" secondAttribute="leading" constant="16" id="aGd-eI-1iE"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="bottom" secondItem="LNU-yv-SRR" secondAttribute="bottom" constant="158" id="aIp-dR-zch"/>
+                            <constraint firstItem="dWk-ra-92o" firstAttribute="top" secondItem="Zfm-Xs-SN4" secondAttribute="bottom" constant="52" id="cb8-hH-gTP"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="trailing" secondItem="sq9-aO-CzR" secondAttribute="trailing" constant="186" id="chm-Om-hGL"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="trailing" secondItem="xbF-wn-tDn" secondAttribute="trailing" constant="186" id="gYn-7a-OOd"/>
+                            <constraint firstItem="Zfm-Xs-SN4" firstAttribute="leading" secondItem="3p4-dc-hMl" secondAttribute="leading" id="htT-Md-Xdf"/>
+                            <constraint firstItem="q87-8U-WQI" firstAttribute="leading" secondItem="3p4-dc-hMl" secondAttribute="leading" constant="16" id="iXk-uu-I1m"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="bottom" secondItem="sq9-aO-CzR" secondAttribute="bottom" constant="58" id="ih7-9s-EJb"/>
+                            <constraint firstItem="q87-8U-WQI" firstAttribute="top" secondItem="sq9-aO-CzR" secondAttribute="bottom" constant="3" id="jKL-cf-6JO"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="bottom" secondItem="5Eu-Kz-hIa" secondAttribute="bottom" constant="134" id="kWp-Fa-4kL"/>
+                            <constraint firstItem="sq9-aO-CzR" firstAttribute="leading" secondItem="3p4-dc-hMl" secondAttribute="leading" constant="16" id="kss-Kj-Bi0"/>
+                            <constraint firstItem="LNU-yv-SRR" firstAttribute="top" secondItem="dWk-ra-92o" secondAttribute="bottom" id="lj2-Cw-CFy"/>
+                            <constraint firstItem="5Eu-Kz-hIa" firstAttribute="leading" secondItem="3p4-dc-hMl" secondAttribute="leading" constant="16" id="ovZ-Ex-gaG"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="trailing" secondItem="dWk-ra-92o" secondAttribute="trailing" constant="208" id="py4-ao-LMq"/>
+                            <constraint firstItem="Zfm-Xs-SN4" firstAttribute="top" secondItem="3p4-dc-hMl" secondAttribute="top" id="rvA-vm-x0c"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="trailing" secondItem="iAn-zy-YST" secondAttribute="trailing" constant="186" id="w90-uT-gaf"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="bottom" secondItem="iAn-zy-YST" secondAttribute="bottom" constant="89" id="x0g-af-GW5"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="trailing" secondItem="LNU-yv-SRR" secondAttribute="trailing" constant="186" id="x9j-2i-xR5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3p4-dc-hMl"/>
                     </view>
