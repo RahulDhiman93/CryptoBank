@@ -57,21 +57,21 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42b-z1-UFy">
-                                                    <rect key="frame" x="90.5" y="69" width="94.5" height="27"/>
+                                                    <rect key="frame" x="85.5" y="69" width="99.5" height="27"/>
                                                     <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8a-2g-YYL">
-                                                    <rect key="frame" x="77.5" y="74" width="10" height="21"/>
+                                                    <rect key="frame" x="72.5" y="74" width="10" height="21"/>
                                                     <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="symb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3L-xg-ukA">
-                                                    <rect key="frame" x="268" y="11" width="52" height="97"/>
-                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="symb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3L-xg-ukA">
+                                                    <rect key="frame" x="279" y="11" width="81" height="113"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
+                                                    <color key="textColor" red="1" green="0.88772392986558157" blue="0.0095553167527856475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change- 24H" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixY-p9-G3f">
@@ -105,7 +105,7 @@
                                             <constraints>
                                                 <constraint firstItem="P8a-2g-YYL" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" constant="63" id="1PO-xf-HYl"/>
                                                 <constraint firstItem="Bxf-WX-6gV" firstAttribute="leading" secondItem="9yz-cy-tOt" secondAttribute="leadingMargin" constant="10" id="1RP-c5-QyZ"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="t3L-xg-ukA" secondAttribute="bottom" constant="46" id="2t6-9b-SMm"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="t3L-xg-ukA" secondAttribute="bottom" constant="30" id="2t6-9b-SMm"/>
                                                 <constraint firstItem="2C8-Ub-dec" firstAttribute="leading" secondItem="9yz-cy-tOt" secondAttribute="leadingMargin" constant="8" id="2tl-Ue-1sf"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="ixY-p9-G3f" secondAttribute="bottom" constant="30" id="4BA-pB-vLe"/>
                                                 <constraint firstItem="mbN-li-Tfb" firstAttribute="top" secondItem="ixY-p9-G3f" secondAttribute="bottom" constant="12" id="5Ux-Gs-6zi"/>
@@ -114,10 +114,10 @@
                                                 <constraint firstItem="cuo-WU-gx1" firstAttribute="bottom" secondItem="9yz-cy-tOt" secondAttribute="bottomMargin" constant="-1" id="DfQ-bw-csG"/>
                                                 <constraint firstItem="zTR-Li-xDO" firstAttribute="bottom" secondItem="9yz-cy-tOt" secondAttribute="bottomMargin" id="GVj-h6-8vP"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="P8a-2g-YYL" secondAttribute="bottom" constant="59" id="KTJ-eX-6LL"/>
-                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="3" id="M1Z-Fv-vrr"/>
+                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="-2" id="M1Z-Fv-vrr"/>
                                                 <constraint firstItem="zTR-Li-xDO" firstAttribute="leading" secondItem="cuo-WU-gx1" secondAttribute="trailing" constant="13" id="MIj-i4-DWG"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Bxf-WX-6gV" secondAttribute="trailing" constant="156" id="MhT-NJ-KRl"/>
-                                                <constraint firstItem="t3L-xg-ukA" firstAttribute="leading" secondItem="ixY-p9-G3f" secondAttribute="trailing" constant="146" id="Qw2-F7-LWB"/>
+                                                <constraint firstItem="t3L-xg-ukA" firstAttribute="leading" secondItem="ixY-p9-G3f" secondAttribute="trailing" constant="157" id="Qw2-F7-LWB"/>
                                                 <constraint firstItem="ixY-p9-G3f" firstAttribute="top" secondItem="42b-z1-UFy" secondAttribute="bottom" constant="7" id="U71-6C-xzh"/>
                                                 <constraint firstItem="Bxf-WX-6gV" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" constant="10" id="V1L-TK-roc"/>
                                                 <constraint firstItem="42b-z1-UFy" firstAttribute="top" secondItem="9yz-cy-tOt" secondAttribute="topMargin" constant="58" id="Y0q-Sa-YgG"/>
@@ -134,7 +134,7 @@
                                                 <constraint firstItem="ixY-p9-G3f" firstAttribute="leading" secondItem="9yz-cy-tOt" secondAttribute="leadingMargin" id="kwk-Ub-qB9"/>
                                                 <constraint firstItem="2C8-Ub-dec" firstAttribute="top" secondItem="Bxf-WX-6gV" secondAttribute="bottom" constant="5" id="l86-h9-LMh"/>
                                                 <constraint firstItem="42b-z1-UFy" firstAttribute="leading" secondItem="P8a-2g-YYL" secondAttribute="trailing" constant="3.5" id="o3B-Ck-AOd"/>
-                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="3" id="oBq-ue-7eb"/>
+                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="-2" id="oBq-ue-7eb"/>
                                                 <constraint firstItem="cuo-WU-gx1" firstAttribute="top" secondItem="ixY-p9-G3f" secondAttribute="bottom" constant="12" id="pzg-gL-Eth"/>
                                                 <constraint firstItem="zTR-Li-xDO" firstAttribute="top" secondItem="ixY-p9-G3f" secondAttribute="bottom" constant="9" id="xQn-9l-e75"/>
                                             </constraints>
@@ -212,7 +212,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zfm-Xs-SN4">
                                 <rect key="frame" x="16" y="69" width="343" height="386"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>

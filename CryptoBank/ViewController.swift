@@ -38,6 +38,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         print(currencyNames)
         self.tableView.reloadData()
+        
+        navigationController?.navigationBar.barTintColor = UIColor(red: 1.0, green: 0.9, blue:0.1, alpha: 1.0)
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black]
+        self.navigationController?.navigationBar.tintColor = UIColor.black
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -128,6 +132,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let detailController = self.storyboard!.instantiateViewController(withIdentifier: "currency") as! CurrencyViewController
         //detailController.meme = memes[(indexPath as NSIndexPath).row]
         self.navigationController!.pushViewController(detailController, animated: true)
+        if let index = self.tableView.indexPathForSelectedRow{
+            self.tableView.deselectRow(at: index, animated: true)
+        }
     //present(detailController, animated: true, completion: nil)
     }
     
