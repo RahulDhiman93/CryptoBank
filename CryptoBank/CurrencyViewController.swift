@@ -14,9 +14,11 @@ class CurrencyViewController: UIViewController {
     @IBOutlet weak var graph: UIView!
     var chartView: BarsChart!
     
-    var onehour:String = "31.2"
-    var twenty4hour:String = "-1.2"
-    var oneweek:String = "16.2"
+    var changearray:[String] = []
+    
+    var onehour:String = ""
+    var twenty4hour:String = ""
+    var oneweek:String = ""
     
     
     
@@ -24,7 +26,9 @@ class CurrencyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        onehour = changearray[0]
+        twenty4hour = changearray[1]
+        oneweek = changearray[2]
         
         self.chart()
         // Do any additional setup after loading the view.
@@ -58,7 +62,7 @@ class CurrencyViewController: UIViewController {
         
         
        let chartConfig1 = BarsChartConfig(
-        valsAxisConfig: ChartAxisConfig(from:0.0 ,to: 50.0,by: 5.0)
+        valsAxisConfig: ChartAxisConfig(from:0.0 ,to: 30.0,by: 1.0)
         )
         
         let frame1 = CGRect (x:0 ,y:0, width: self.graph.frame.width, height: (self.graph.frame.height+10))

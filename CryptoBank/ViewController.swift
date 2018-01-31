@@ -129,9 +129,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailController = self.storyboard!.instantiateViewController(withIdentifier: "currency") as! CurrencyViewController
-        //detailController.meme = memes[(indexPath as NSIndexPath).row]
-        self.navigationController!.pushViewController(detailController, animated: true)
+       /* let detailController = self.storyboard!.instantiateViewController(withIdentifier: "currency") as! CurrencyViewController
+        self.navigationController!.pushViewController(detailController, animated: true)*/
+        
+        let changedollarArray:[String] = [change1weeek[indexPath.row],change24hours[indexPath.row],change7days[indexPath.row]]
+        
+        performSegue(withIdentifier: "ss", sender: changedollarArray)
+        
         if let index = self.tableView.indexPathForSelectedRow{
             self.tableView.deselectRow(at: index, animated: true)
         }
@@ -148,6 +152,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         // Scheduling timer to Call the function "updateCounting" with the interval of 1 seconds
         timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.updateCounting), userInfo: nil, repeats: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let sg = segue.destination as! CurrencyViewController
+        sg.changearray = (sender as? [String])!
+        
+    }
+    
+    
     
     @objc func updateCounting(){
         print("im updating again")
