@@ -23,6 +23,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var symb:[String] = []
     var change24hours:[String] = []
     var ranking:[String] = []
+    var change1weeek:[String] = []
+    var change7days:[String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +43,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func networkingAPI(){
         DispatchQueue.main.async {
-            self.get_crptodata(){ (success,fail,names,price,symbol,change,rank) in
+            self.get_crptodata(){ (success,fail,names,price,symbol,change,rank,change1week,change7day) in
                 if success == false {
                     return
                 }
@@ -54,6 +56,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                         self.symb = symbol!
                         self.change24hours = change!
                         self.ranking = rank!
+                        self.change1weeek = change1week!
+                        self.change7days = change7day!
                         print(self.priceusd.count)
                         print("COUNT")
                         print(self.currencyNames.count)
@@ -97,21 +101,21 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 }
     
    
-    func get_crptodata(_ completion: @escaping (_ done: Bool, _ error: String?,_ gotit: [String]?,_ price:[String]?,_ symbol:[String]?,_ change:[String]?,_ rank:[String]?) -> Void){
+    func get_crptodata(_ completion: @escaping (_ done: Bool, _ error: String?,_ gotit: [String]?,_ price:[String]?,_ symbol:[String]?,_ change:[String]?,_ rank:[String]?,_ change1week:[String]?,_ change7day:[String]?) -> Void){
         var cryp = CryptoNetwork()
        
         
-        cryp.get_data(completion: {error,data,price,symbol,change,rank in
+        cryp.get_data(completion: {error,data,price,symbol,change,rank,change1week,change7day in
             
             if error != nil{
-                completion(false,error,nil,nil,nil,nil,nil)
+                completion(false,error,nil,nil,nil,nil,nil,nil,nil)
                 return
             }
             
             else{
                   DispatchQueue.main.async {
                     print("DONE")
-             completion(true,nil,data!,price!,symbol!,change!,rank!)
+             completion(true,nil,data!,price!,symbol!,change!,rank!,change1week!,change7day!)
                     //self.tableView.reloadData()
             }
             }
