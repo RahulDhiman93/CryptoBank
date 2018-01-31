@@ -37,27 +37,34 @@ class CurrencyViewController: UIViewController {
         var double24hour = Double(twenty4hour)
         var doubleweek = Double(oneweek)
         
+       
+        
+        
         if intonehour! < 0.0{
             
+            //flag1 = 1
             intonehour = -intonehour!
         }
         
         if double24hour! < 0.0{
-            
+          //  flag2 = 1
             double24hour = -double24hour!
         }
         
         if doubleweek! < 0.0{
-            
+          //  flag3 = 1
             doubleweek = -doubleweek!
         }
         
         
        let chartConfig1 = BarsChartConfig(
-        valsAxisConfig: ChartAxisConfig(from:0.0 ,to: 50.0,by: 2.0)
+        valsAxisConfig: ChartAxisConfig(from:0.0 ,to: 50.0,by: 5.0)
         )
         
         let frame1 = CGRect (x:0 ,y:0, width: self.graph.frame.width, height: (self.graph.frame.height+10))
+        
+        
+       
         
         let chart = BarsChart(
             frame: frame1,
@@ -69,11 +76,12 @@ class CurrencyViewController: UIViewController {
                 ("24-H",double24hour!),
                 ("7-D",doubleweek!)
             ],
-            color: UIColor.darkGray,
+            color: UIColor.black,
             barWidth: 40
         )
         
         self.graph.addSubview(chart.view)
+        
         self.chartView = chart
     }
     
