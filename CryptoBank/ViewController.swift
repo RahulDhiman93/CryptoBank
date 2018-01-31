@@ -133,7 +133,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
        /* let detailController = self.storyboard!.instantiateViewController(withIdentifier: "currency") as! CurrencyViewController
         self.navigationController!.pushViewController(detailController, animated: true)*/
         
-        let changedollarArray:[String] = [change1weeek[indexPath.row],change24hours[indexPath.row],change7days[indexPath.row]]
+        let changedollarArray:[String] = [change1weeek[indexPath.row],change24hours[indexPath.row],change7days[indexPath.row],symb[indexPath.row],currencyNames[indexPath.row],priceusd[indexPath.row]]
         
         performSegue(withIdentifier: "ss", sender: changedollarArray)
         

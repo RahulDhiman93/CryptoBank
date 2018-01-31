@@ -213,7 +213,21 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zfm-Xs-SN4">
                                 <rect key="frame" x="0.0" y="64" width="375" height="344"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cG8-uo-oCa">
+                                        <rect key="frame" x="302.5" y="8" width="64" height="31"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cG8-uo-oCa" secondAttribute="bottom" constant="305" id="F7g-Xi-ILW"/>
+                                    <constraint firstItem="cG8-uo-oCa" firstAttribute="top" secondItem="Zfm-Xs-SN4" secondAttribute="top" constant="8" id="V3V-lz-UEU"/>
+                                    <constraint firstAttribute="trailing" secondItem="cG8-uo-oCa" secondAttribute="trailing" constant="8.5" id="eJh-pR-w7v"/>
+                                    <constraint firstItem="cG8-uo-oCa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zfm-Xs-SN4" secondAttribute="leading" id="p9R-qy-CnE"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change in 1 hour:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWk-ra-92o">
                                 <rect key="frame" x="16" y="473" width="151" height="25"/>
@@ -239,7 +253,7 @@
                                 <color key="textColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFu-a4-NKo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFu-a4-NKo">
                                 <rect key="frame" x="16" y="419" width="173" height="21"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -403,6 +417,7 @@
                         <outlet property="priceBTC" destination="LYv-y9-Wdo" id="pkZ-UH-SJg"/>
                         <outlet property="rank1" destination="WFX-Fc-lhV" id="0eD-hb-1J5"/>
                         <outlet property="supply" destination="hrp-hK-51C" id="hMG-4v-geG"/>
+                        <outlet property="symbol" destination="cG8-uo-oCa" id="6db-0P-pBK"/>
                         <outlet property="totalsupply" destination="ieH-Zz-UlU" id="pHb-f8-VqZ"/>
                     </connections>
                 </viewController>

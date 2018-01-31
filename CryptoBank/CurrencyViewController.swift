@@ -11,6 +11,7 @@ import SwiftCharts
 
 class CurrencyViewController: UIViewController {
 
+    @IBOutlet weak var symbol: UILabel!
     @IBOutlet weak var graph: UIView!
     var chartView: BarsChart!
     
@@ -42,11 +43,17 @@ class CurrencyViewController: UIViewController {
         
         self.chart()
         
-        self.change1h.textAlignment = .center
+       // self.rank1.translatesAutoresizingMaskIntoConstraints = true
+       
         
-        self.change1h.text =  changearray[0] + "$"
+        
+        self.change1h.text =  changearray[0] + "$" 
         self.change24h.text =  changearray[1] + "$"
         self.change7day.text =  changearray[2] + "$"
+        self.symbol.text = changearray[3]
+        self.symbol.font = UIFont.boldSystemFont(ofSize: 25.0)
+        self.rank1.text = changearray[4]
+        self.price1.text = changearray[5] + "$"
         // Do any additional setup after loading the view.
     }
     
