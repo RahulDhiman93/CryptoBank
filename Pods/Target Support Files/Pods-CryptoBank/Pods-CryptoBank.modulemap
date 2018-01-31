@@ -1,0 +1,6 @@
+framework module Pods_CryptoBank {
+  umbrella header "Pods-CryptoBank-umbrella.h"
+
+  export *
+  module * { export * }
+}

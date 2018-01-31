@@ -16,6 +16,7 @@
 		0860CA482016F3E700300BED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0860CA462016F3E700300BED /* LaunchScreen.storyboard */; };
 		0860CA512016FC7100300BED /* CryptoNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860CA502016FC7100300BED /* CryptoNetwork.swift */; };
 		0860CA532017895800300BED /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860CA522017895800300BED /* TableViewCell.swift */; };
+		DDB5BE3B2E81F959E416150F /* Pods_CryptoBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7FFF17633F7276B5F8394A /* Pods_CryptoBank.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		0860CA492016F3E700300BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0860CA502016FC7100300BED /* CryptoNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoNetwork.swift; sourceTree = "<group>"; };
 		0860CA522017895800300BED /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3F7FFF17633F7276B5F8394A /* Pods_CryptoBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41319638D1A7FF412FB1F2C3 /* Pods-CryptoBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoBank.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoBank/Pods-CryptoBank.release.xcconfig"; sourceTree = "<group>"; };
+		81658D238602C99C2AB1A628 /* Pods-CryptoBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoBank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoBank/Pods-CryptoBank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB5BE3B2E81F959E416150F /* Pods_CryptoBank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +54,8 @@
 				0860CA4F2016FC5300300BED /* Networking */,
 				0860CA392016F3E700300BED /* CryptoBank */,
 				0860CA382016F3E700300BED /* Products */,
+				CA8092E4BF6EB7B9C61A7B22 /* Pods */,
+				0D6371170C62EF727A3A5C30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +91,23 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		0D6371170C62EF727A3A5C30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F7FFF17633F7276B5F8394A /* Pods_CryptoBank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA8092E4BF6EB7B9C61A7B22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81658D238602C99C2AB1A628 /* Pods-CryptoBank.debug.xcconfig */,
+				41319638D1A7FF412FB1F2C3 /* Pods-CryptoBank.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0860CA4C2016F3E700300BED /* Build configuration list for PBXNativeTarget "CryptoBank" */;
 			buildPhases = (
+				94778DD41A991C7F746C11CB /* [CP] Check Pods Manifest.lock */,
 				0860CA332016F3E700300BED /* Sources */,
 				0860CA342016F3E700300BED /* Frameworks */,
 				0860CA352016F3E700300BED /* Resources */,
+				74EC482984AC6610FE2DF302 /* [CP] Embed Pods Frameworks */,
+				0D6D6DC84D4B9D934D3CA15D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -150,6 +177,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D6D6DC84D4B9D934D3CA15D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoBank/Pods-CryptoBank-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74EC482984AC6610FE2DF302 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CryptoBank/Pods-CryptoBank-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoBank/Pods-CryptoBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94778DD41A991C7F746C11CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0860CA332016F3E700300BED /* Sources */ = {
@@ -296,6 +377,7 @@
 		};
 		0860CA4D2016F3E700300BED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81658D238602C99C2AB1A628 /* Pods-CryptoBank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +393,7 @@
 		};
 		0860CA4E2016F3E700300BED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41319638D1A7FF412FB1F2C3 /* Pods-CryptoBank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
