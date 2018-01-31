@@ -20,18 +20,55 @@ class CurrencyViewController: UIViewController {
     var twenty4hour:String = ""
     var oneweek:String = ""
     
+    @IBOutlet weak var rank1: UITextView!
+    @IBOutlet weak var price1: UITextView!
+    @IBOutlet weak var change1h: UITextView!
+    @IBOutlet weak var change24h: UITextView!
+    @IBOutlet weak var change7day: UITextView!
+    @IBOutlet weak var priceBTC: UITextView!
+    @IBOutlet weak var supply: UITextView!
+    @IBOutlet weak var totalsupply: UITextView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.roundedcorner(10, true)
 
         onehour = changearray[0]
         twenty4hour = changearray[1]
         oneweek = changearray[2]
         
         self.chart()
+        
+        self.change1h.textAlignment = .center
+        
+        self.change1h.text =  changearray[0] + "$"
+        self.change24h.text =  changearray[1] + "$"
+        self.change7day.text =  changearray[2] + "$"
         // Do any additional setup after loading the view.
+    }
+    
+    
+    func roundedcorner(_ cor:CGFloat,_ bound:Bool){
+        self.rank1.layer.cornerRadius = cor
+        self.price1.layer.cornerRadius = cor
+        self.change1h.layer.cornerRadius = cor
+        self.change24h.layer.cornerRadius = cor
+        self.change7day.layer.cornerRadius = cor
+        self.priceBTC.layer.cornerRadius = cor
+        self.supply.layer.cornerRadius = cor
+        self.totalsupply.layer.cornerRadius = cor
+        
+        self.rank1.clipsToBounds = bound
+        self.price1.clipsToBounds = bound
+        self.change1h.clipsToBounds = bound
+        self.change24h.clipsToBounds = bound
+        self.change7day.clipsToBounds = bound
+        self.priceBTC.clipsToBounds = bound
+        self.supply.clipsToBounds = bound
+        self.totalsupply.clipsToBounds = bound
     }
     
     
