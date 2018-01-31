@@ -1,14 +1,15 @@
 PODS:
-  - Charts (3.0.5):
-    - Charts/Core (= 3.0.5)
-  - Charts/Core (3.0.5)
+  - CorePlot (2.2)
+  - SwiftCharts (0.6.1)
 
 DEPENDENCIES:
-  - Charts
+  - CorePlot
+  - SwiftCharts
 
 SPEC CHECKSUMS:
-  Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
+  CorePlot: cbe0c6e14220705e32e06a89c7d6a5a908b7d7d8
+  SwiftCharts: 77378d6cf667e95f9c79a745b6778e66eed5339c
 
-PODFILE CHECKSUM: 8d7dc322598f983a12dd8822197bf0a0c1d0d43b
+PODFILE CHECKSUM: 6b5926442b14ba741b13a7e55f5d6ae6657f664d
 
 COCOAPODS: 1.3.1

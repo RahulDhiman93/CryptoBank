@@ -28,7 +28,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.scheduledTimerWithTimeInterval()
+        //self.scheduledTimerWithTimeInterval()
         tableView.delegate = self
         tableView.dataSource = self
        

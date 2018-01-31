@@ -211,19 +211,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zfm-Xs-SN4">
-                                <rect key="frame" x="16" y="69" width="343" height="386"/>
+                                <rect key="frame" x="16" y="69" width="343" height="433"/>
                                 <color key="backgroundColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="3p4-dc-hMl" firstAttribute="trailing" secondItem="Zfm-Xs-SN4" secondAttribute="trailing" constant="16" id="0Dj-cv-hFf"/>
-                            <constraint firstItem="3p4-dc-hMl" firstAttribute="bottom" secondItem="Zfm-Xs-SN4" secondAttribute="bottom" constant="212" id="4Ec-kR-57e"/>
+                            <constraint firstItem="3p4-dc-hMl" firstAttribute="bottom" secondItem="Zfm-Xs-SN4" secondAttribute="bottom" constant="165" id="4Ec-kR-57e"/>
                             <constraint firstItem="Zfm-Xs-SN4" firstAttribute="leading" secondItem="3p4-dc-hMl" secondAttribute="leading" constant="16" id="htT-Md-Xdf"/>
                             <constraint firstItem="Zfm-Xs-SN4" firstAttribute="top" secondItem="3p4-dc-hMl" secondAttribute="top" constant="49" id="rvA-vm-x0c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3p4-dc-hMl"/>
                     </view>
+                    <connections>
+                        <outlet property="graph" destination="Zfm-Xs-SN4" id="Mfg-uf-evQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEK-Uo-Xxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

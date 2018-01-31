@@ -6,6 +6,7 @@ target 'CryptoBank' do
   use_frameworks!
 
   # Pods for CryptoBank
-  pod 'Charts'
-
+  pod 'CorePlot'
+  pod 'SwiftCharts'
+  
 end
