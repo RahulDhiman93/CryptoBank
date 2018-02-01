@@ -8,12 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate{
     
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var ind: UIActivityIndicatorView!
-    
+
     var i = 1
     
     
@@ -31,6 +30,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.scheduledTimerWithTimeInterval()
         tableView.delegate = self
         tableView.dataSource = self
+        
        
         self.view?.alpha = 0.6
         self.ind.startAnimating()
@@ -81,6 +81,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("in count")
         print(currencyNames.count)
+        
+        
         return currencyNames.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -93,17 +95,19 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let rank = ranking[indexPath.row]
         print("in arname")
         print(arName)
-       cell.CurrencyTitle.text = arName
-        cell.priceUSD.text = String(prPrice)
+        cell.CurrencyTitle.text = arName
+        cell.priceUSD.text = String(prPrice) + "$"
         cell.symbol.text = symbol
         
        
+        
        
         print(rank)
         cell.change24H.text = chaneg24h
         
         return cell
 }
+   
     
    
     func get_crptodata(_ completion: @escaping (_ done: Bool, _ error: String?,_ gotit: [String]?,_ price:[String]?,_ symbol:[String]?,_ change:[String]?,_ rank:[String]?,_ change1week:[String]?,_ change7day:[String]?) -> Void){
