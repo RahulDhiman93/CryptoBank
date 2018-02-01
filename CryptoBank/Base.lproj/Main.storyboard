@@ -27,12 +27,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crypto-Bank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6k4-dM-JDA">
-                                <rect key="frame" x="16" y="67" width="343" height="54"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="50"/>
-                                <color key="textColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C0D-Dc-LoQ">
                                 <rect key="frame" x="0.0" y="195" width="375" height="472"/>
                                 <color key="backgroundColor" red="0.01965268782" green="0.01965268782" blue="0.01965268782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -57,13 +51,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42b-z1-UFy">
-                                                    <rect key="frame" x="85.5" y="69" width="99.5" height="27"/>
+                                                    <rect key="frame" x="83" y="69" width="102" height="27"/>
                                                     <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8a-2g-YYL">
-                                                    <rect key="frame" x="72.5" y="74" width="10" height="21"/>
+                                                    <rect key="frame" x="70" y="74" width="10" height="21"/>
                                                     <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -114,7 +108,7 @@
                                                 <constraint firstItem="cuo-WU-gx1" firstAttribute="bottom" secondItem="9yz-cy-tOt" secondAttribute="bottomMargin" constant="-1" id="DfQ-bw-csG"/>
                                                 <constraint firstItem="zTR-Li-xDO" firstAttribute="bottom" secondItem="9yz-cy-tOt" secondAttribute="bottomMargin" id="GVj-h6-8vP"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="P8a-2g-YYL" secondAttribute="bottom" constant="59" id="KTJ-eX-6LL"/>
-                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="-2" id="M1Z-Fv-vrr"/>
+                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="-4.5" id="M1Z-Fv-vrr"/>
                                                 <constraint firstItem="zTR-Li-xDO" firstAttribute="leading" secondItem="cuo-WU-gx1" secondAttribute="trailing" constant="13" id="MIj-i4-DWG"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Bxf-WX-6gV" secondAttribute="trailing" constant="156" id="MhT-NJ-KRl"/>
                                                 <constraint firstItem="t3L-xg-ukA" firstAttribute="leading" secondItem="ixY-p9-G3f" secondAttribute="trailing" constant="157" id="Qw2-F7-LWB"/>
@@ -134,7 +128,7 @@
                                                 <constraint firstItem="ixY-p9-G3f" firstAttribute="leading" secondItem="9yz-cy-tOt" secondAttribute="leadingMargin" id="kwk-Ub-qB9"/>
                                                 <constraint firstItem="2C8-Ub-dec" firstAttribute="top" secondItem="Bxf-WX-6gV" secondAttribute="bottom" constant="5" id="l86-h9-LMh"/>
                                                 <constraint firstItem="42b-z1-UFy" firstAttribute="leading" secondItem="P8a-2g-YYL" secondAttribute="trailing" constant="3.5" id="o3B-Ck-AOd"/>
-                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="-2" id="oBq-ue-7eb"/>
+                                                <constraint firstItem="P8a-2g-YYL" firstAttribute="leading" secondItem="2C8-Ub-dec" secondAttribute="trailing" constant="-4.5" id="oBq-ue-7eb"/>
                                                 <constraint firstItem="cuo-WU-gx1" firstAttribute="top" secondItem="ixY-p9-G3f" secondAttribute="bottom" constant="12" id="pzg-gL-Eth"/>
                                                 <constraint firstItem="zTR-Li-xDO" firstAttribute="top" secondItem="ixY-p9-G3f" secondAttribute="bottom" constant="9" id="xQn-9l-e75"/>
                                             </constraints>
@@ -152,27 +146,42 @@
                                 </prototypes>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="W5V-V3-fyk">
-                                <rect key="frame" x="177" y="167" width="20" height="20"/>
+                                <rect key="frame" x="177" y="355.5" width="20" height="20"/>
                                 <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="displayGamut=sRGB-heightClass=regular-widthClass=compact">
                                     <nil key="backgroundColor"/>
                                 </variation>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crypto-Bank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6k4-dM-JDA">
+                                <rect key="frame" x="16" y="83" width="343" height="72"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="50"/>
+                                <color key="textColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search cryptocurrency" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyn-K7-Hee">
+                                <rect key="frame" x="12" y="157" width="351" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83581501349999998" blue="0.038371925250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.01965268782" green="0.01965268782" blue="0.01965268782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6k4-dM-JDA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="1cJ-IG-6zh"/>
-                            <constraint firstItem="C0D-Dc-LoQ" firstAttribute="top" secondItem="6k4-dM-JDA" secondAttribute="bottom" constant="74" id="DS4-uu-6K7"/>
+                            <constraint firstItem="6k4-dM-JDA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="1cJ-IG-6zh"/>
+                            <constraint firstItem="W5V-V3-fyk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4UT-EM-2yR"/>
+                            <constraint firstItem="eyn-K7-Hee" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="AQa-D8-4p8"/>
+                            <constraint firstItem="C0D-Dc-LoQ" firstAttribute="top" secondItem="6k4-dM-JDA" secondAttribute="bottom" constant="40" id="DS4-uu-6K7"/>
                             <constraint firstItem="C0D-Dc-LoQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GS3-C0-WKM"/>
+                            <constraint firstItem="W5V-V3-fyk" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Hlw-be-yeY"/>
                             <constraint firstItem="6k4-dM-JDA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HxI-qp-xOd"/>
-                            <constraint firstItem="W5V-V3-fyk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="PLd-dG-1Wc"/>
+                            <constraint firstItem="C0D-Dc-LoQ" firstAttribute="top" secondItem="eyn-K7-Hee" secondAttribute="bottom" constant="8" id="Q2Z-em-upz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eyn-K7-Hee" secondAttribute="trailing" constant="12" id="UcP-QC-ySK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6k4-dM-JDA" secondAttribute="trailing" constant="16" id="ZMi-PJ-SrO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6k4-dM-JDA" secondAttribute="bottom" constant="546" id="aY8-EP-yaB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6k4-dM-JDA" secondAttribute="bottom" constant="512" id="aY8-EP-yaB"/>
                             <constraint firstItem="C0D-Dc-LoQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gHo-fF-q4L"/>
                             <constraint firstItem="C0D-Dc-LoQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hpI-LL-nbM"/>
-                            <constraint firstItem="W5V-V3-fyk" firstAttribute="top" secondItem="6k4-dM-JDA" secondAttribute="bottom" constant="46" id="kHq-PY-9gb"/>
-                            <constraint firstItem="C0D-Dc-LoQ" firstAttribute="top" secondItem="W5V-V3-fyk" secondAttribute="bottom" constant="8" id="nJP-IT-EDK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W5V-V3-fyk" secondAttribute="trailing" constant="178" id="qj8-ny-AW4"/>
+                            <constraint firstItem="eyn-K7-Hee" firstAttribute="top" secondItem="6k4-dM-JDA" secondAttribute="bottom" constant="2" id="uPt-lB-PvS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
