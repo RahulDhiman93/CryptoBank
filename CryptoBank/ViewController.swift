@@ -30,7 +30,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.scheduledTimerWithTimeInterval()
         tableView.delegate = self
         tableView.dataSource = self
-        
+        tableView.isHidden = true
        
         self.view?.alpha = 0.6
         self.ind.startAnimating()
@@ -65,6 +65,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                         print(self.priceusd.count)
                         print("COUNT")
                         print(self.currencyNames.count)
+                        self.tableView.isHidden = false
                         self.tableView.reloadData()
                     }
                     
